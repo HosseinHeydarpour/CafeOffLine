@@ -1,0 +1,50 @@
+import { Component } from '@angular/core';
+import { Table } from '../../shared/models/table.model';
+
+@Component({
+  selector: 'app-table-list',
+  imports: [],
+  templateUrl: './table-list.component.html',
+  styleUrl: './table-list.component.scss',
+})
+export class TableListComponent {
+  tableList: Table[] = [
+    { id: 1, name: 'آلاچیق ۱' },
+    { id: 2, name: 'آلاچیق ۲' },
+    { id: 3, name: 'آلاچیق ۳' },
+    { id: 4, name: 'آلاچیق ۴' },
+    { id: 5, name: 'آلاچیق ۵' },
+    { id: 6, name: 'آلاچیق ۶' },
+    { id: 7, name: 'آلاچیق ۷' },
+    { id: 8, name: 'آلاچیق ۸' },
+    { id: 9, name: 'آلاچیق ۹' },
+    { id: 10, name: 'آلاچیق ۱۰' },
+    { id: 11, name: 'آلاچیق ۱۱' },
+    { id: 12, name: 'آلاچیق ۱۲' },
+    { id: 13, name: 'آلاچیق ۱۳' },
+    { id: 14, name: 'آلاچیق ۱۴' },
+    { id: 15, name: 'آلاچیق ۱۵' },
+    { id: 16, name: 'آلاچیق ۱۶' },
+    { id: 17, name: 'آلاچیق ۱۷' },
+    { id: 18, name: 'آلاچیق ۱۸' },
+    { id: 19, name: 'آلاچیق ۱۹' },
+    { id: 20, name: 'آلاچیق ۲۰' },
+    { id: 21, name: 'آلاچیق ۲۱' },
+    { id: 22, name: 'آلاچیق ۲۲' },
+    { id: 23, name: 'آلاچیق ۲۳' },
+    { id: 24, name: 'آلاچیق ۲۴' },
+    { id: 25, name: 'آلاچیق ۲۵' },
+    { id: 26, name: 'آلاچیق ۲۶' },
+    { id: 27, name: 'آلاچیق ۲۷' },
+    { id: 28, name: 'آلاچیق ۲۸' },
+    { id: 29, name: 'آلاچیق ۲۹' },
+    { id: 30, name: 'آلاچیق ۳۰' },
+    { id: 31, name: 'آلاچیق ۳۱' },
+    { id: 32, name: 'آلاچیق ۳۲' },
+    { id: 33, name: 'آلاچیق ۳۳' },
+    { id: 34, name: 'آلاچیق ۳۴' },
+    { id: 35, name: 'آلاچیق ۳۵' },
+    { id: 36, name: 'آلاچیق ۳۶' },
+    { id: 37, name: 'آلاچیق ۳۷' },
+  ];
+}
