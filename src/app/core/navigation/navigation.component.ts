@@ -1,10 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { TuiIcon } from '@taiga-ui/core';
+
 import { ThemeService } from '../../shared/services/theme.service';
+import { Router } from 'express';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
-  imports: [TuiIcon],
+  imports: [RouterLink],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
