@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TuiIcon } from '@taiga-ui/core';
+import { ThemeService } from '../../shared/services/theme.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,4 +8,10 @@ import { TuiIcon } from '@taiga-ui/core';
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
-export class NavigationComponent {}
+export class NavigationComponent {
+  themeService = inject(ThemeService);
+
+  toggleTheme() {
+    this.themeService.toggleTheme();
+  }
+}

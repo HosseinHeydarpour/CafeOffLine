@@ -13,6 +13,12 @@
 
 body {
   font-size: 14px;
+  direction: rtl;
+
+  &.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
 }
 
 // Icons

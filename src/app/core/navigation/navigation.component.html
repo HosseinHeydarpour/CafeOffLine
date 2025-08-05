@@ -1,11 +1,15 @@
-<nav>
+<nav class="py-4 px-4 transition-all delay-100 dark:bg-gray-800">
   <ul>
     <li>
-      <button class="w-48 h-48">
-        <tui-icon
-          icon="@tui.heart"
-          [style.color]="'var(--tui-background-accent-1)'"
-        />
+      <button
+        class="w-12 h-12 px-2 py-2 bg-transparent border rounded-full flex items-center justify-center"
+        (click)="toggleTheme()"
+      >
+        @if(themeService.checkDarkMode()) {
+        <i class="ic--baseline-dark-mode text-white stroke-white"></i>
+        } @else {
+        <i class="ic--baseline-light-mode"></i>
+        }
       </button>
     </li>
   </ul>
